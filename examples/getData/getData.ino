@@ -28,10 +28,11 @@ void setup(){
 }
 
 void loop(){
-
- Serial.print("temperature:"); Serial.print(dht20.getTemperature());Serial.print("C");
- Serial.print("  humidity:"); Serial.print(dht20.getHumidity()*100);Serial.println(" %RH");
-
- delay(1000);
+  //获取环境温度
+  Serial.print("temperature:"); Serial.print(dht20.getTemperature());Serial.print("C");
+  //获取相对湿度
+  Serial.print("  humidity:"); Serial.print(dht20.getHumidity()*100);Serial.println(" %RH");
+  
+  delay(1000);
 
 }
