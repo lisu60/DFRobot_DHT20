@@ -51,7 +51,7 @@ To use this library, first download the library file, paste it into the \Arduino
     
   /**
    * @brief 获取相对湿度,单位为%RH. 
-   * @return 相对湿度, 量程为(1-100%)
+   * @return 相对湿度, 量程为(0-100%)
    */
   float getHumidity();
 ```
