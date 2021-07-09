@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 """
-  *@file getData.ino
+  *@file get_data.ino
   *@brief 读取环境温度和相对湿度,并打印到串口
   *@copyright  Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
   *@licence     The MIT License (MIT)
@@ -25,7 +25,6 @@ dht20 = DFRobot_DHT20(IIC_MODE ,IIC_ADDRESS)
 """
      @brief 初始化函数
 """
-
 dht20.begin()
 
 while True:

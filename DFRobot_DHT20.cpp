@@ -25,10 +25,13 @@ int DFRobot_DHT20::begin() {
   _pWire->begin();
   //check if the IIC communication works 
   writeCommand(readCMD,1);
+  
   readData(&data, 1);
+  //Serial.println(data);
   if((data | 0x8) == 0){
      return 1;
   }
+  if(data == 255) return 1;
   return 0;
 }
 
