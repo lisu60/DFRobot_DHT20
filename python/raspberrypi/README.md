@@ -1,8 +1,5 @@
 # DFRobot_DHT20
-DHT20 配有一个全新设计的 ASIC专用芯片、一个经过改进的MEMS半导体电容式湿度传感元件 <br>
-和一个标准的片上温度传感元件，其性能已经大大提升甚至超出了前一代传感器的可靠性水平 <br>
-新一代温湿度传感器，经过改进使其在恶劣环境下的性能更稳定。每一个传感器都经过严格的 <br>
-校准和测试。由于对传感器做了改良和微型化改进，因此它的性价比更高。<br>
+The DHT20 temperature & humidity sensor is the newly upgraded version of the DHT11. The DHT20 features a brand-new ASIC dedicated chip, an improved MEMS semiconductor capacitive humidity sensor element and a standard on-chip temperature element. All sensors are factory calibrated and characterized by low power, high precision & stability, fast response, and strong anti-interference. Moreover, the DHT20 performance parameters of accuracy, power supply voltage, measurement range and response time have been enhanced greatly over the previous generation,making it more cost-effective. Besides that, the DHT20 temperature & humidity sensor employs I2C digital output protocol, which is very suitable for HVAC,automobiles, data loggers, weather stations, home appliances, and other related temperature and humidity detection and controlled areas. <br>
 
 ![正反面svg效果图](https://github.com/cdjq/DFRobot_LIS2DW12/raw/master/resources/images/SEN0245svg4.png)
 
@@ -33,8 +30,8 @@ Download the DFRobot_DHT20 file to the Raspberry Pi file directory, then run the
   def begin(self ):
 
   '''
-    @brief 获取环境温度,单位为摄氏度(°C)
-    @return 环境温度,量程为(-40°C ~ 80°C)
+    @brief Get ambient temperature, unit: °C
+    @return ambient temperature, its measurement range is (-40°C ~ 80°C)
   '''
   def get_temperature(self):
      
