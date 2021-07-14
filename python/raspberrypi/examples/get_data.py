@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 """
   *@file get_data.ino
-  *@brief 读取环境温度和相对湿度,并打印到串口
+  *@brief Read ambient temperature and relative humidity and print them to serial port.
   *@copyright  Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
   *@licence     The MIT License (MIT)
   *@author [fengli](li.feng@dfrobot.com)
@@ -23,12 +23,12 @@ IIC_ADDRESS      = 0x38           # default i2c device address
 '''
 dht20 = DFRobot_DHT20(IIC_MODE ,IIC_ADDRESS)
 """
-     @brief 初始化函数
+     @brief Initialize function
 """
 dht20.begin()
 
 while True:
-  #读取环境温度和相对湿度,并打印到终端 
+  #Read ambient temperature and relative humidity and print them to terminal
   print("temperature::%f C"%dht20.get_temperature())
   print("humidity::%f RH"%dht20.get_humidity())
   time.sleep(1)
