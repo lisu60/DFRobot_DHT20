@@ -1,13 +1,8 @@
 # DFRobot_DHT20
 
-The DHT20 temperature & humidity sensor is the newly upgraded version of the DHT11. <br>
-The DHT20 features a brand-new ASIC dedicated chip, an improved MEMS semiconductor capacitive humidity sensor element and a standard on-chip temperature element. <br>
-All sensors are factory calibrated and characterized by low power, high precision & stability, fast response, and strong anti-interference. <br>
-Moreover, the DHT20 performance parameters of accuracy, power supply voltage, measurement range and response time have been enhanced greatly over the previous <br>
-generation,making it more cost-effective. Besides that, the DHT20 temperature & humidity sensor employs I2C digital output protocol, which is very suitable for <br> 
-HVAC,automobiles, data loggers, weather stations, home appliances, and other related temperature and humidity detection and controlled areas. <br>
+The DHT20 temperature & humidity sensor is the newly upgraded version of the DHT11. The DHT20 features a brand-new ASIC dedicated chip, an improved MEMS semiconductor capacitive humidity sensor element and a standard on-chip temperature element. All sensors are factory calibrated and characterized by low power, high precision & stability, fast response, and strong anti-interference. Moreover, the DHT20 performance parameters of accuracy, power supply voltage, measurement range and response time have been enhanced greatly over the previous generation,making it more cost-effective. Besides that, the DHT20 temperature & humidity sensor employs I2C digital output protocol, which is very suitable for HVAC,automobiles, data loggers, weather stations, home appliances, and other related temperature and humidity detection and controlled areas. <br>
 
-![正反面svg效果图](https://github.com/cdjq/DFRobot_LIS2DW12/raw/master/resources/images/SEN0245svg4.png)
+![正反面svg效果图](https://dfimg.dfrobot.com/nobody/wiki/73694035631036647cd8872b1d083f6c.png)
 
 ## Product Link（链接到英文商城）
     SKU：产品名称
