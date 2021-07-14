@@ -36,8 +36,8 @@ Download the DFRobot_DHT20 file to the Raspberry Pi file directory, then run the
   def get_temperature(self):
      
   '''
-    @brief 获取相对湿度,单位为%RH. 
-    @return 相对湿度, 量程为(1-100%)
+    @brief Get relative humidity, unit: %RH. 
+    @return relative humidity, its measurement range is (1-100%)
   '''
   def get_humidity(self):
 ```
