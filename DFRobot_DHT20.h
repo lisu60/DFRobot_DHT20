@@ -42,14 +42,14 @@ public:
   int begin(void);
     
   /**
-   * @brief 获取环境温度,单位为摄氏度(°C)
-   * @return 环境温度,量程为(-40°C ~ 80°C)
+   * @brief Get ambient temperature, unit: °C
+   * @return ambient temperature, measurement range: -40°C ~ 80°C
    */
   float getTemperature();
     
   /**
-   * @brief 获取相对湿度,单位为%RH. 
-   * @return 相对湿度, 量程为(0-100%)
+   * @brief Get relative humidity, unit: %RH. 
+   * @return relative humidity, measurement range: 0-100%
    */
   float getHumidity();
 
