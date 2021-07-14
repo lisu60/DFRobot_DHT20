@@ -40,8 +40,8 @@ class DFRobot_DHT20(object):
       return True
 
   '''
-    @brief 获取环境温度,单位为摄氏度(°C)
-    @return 环境温度,量程为(-40°C ~ 80°C)
+    @brief Get ambient temperature, unit: °C
+    @return ambient temperature,the measurement range is -40°C ~ 80°C
   '''
   def get_temperature(self):
      self.write_reg(0xac,[0x33,0x00])
@@ -53,8 +53,8 @@ class DFRobot_DHT20(object):
      return temperature
      
   '''
-    @brief 获取相对湿度,单位为%RH. 
-    @return 相对湿度, 量程为(1-100%)
+    @brief Get relative humidity, unit: %RH. 
+    @return relative humidity, the measurement range is (1-100%)
   '''
   def get_humidity(self):
      self.write_reg(0xac,[0x33,0x00])
