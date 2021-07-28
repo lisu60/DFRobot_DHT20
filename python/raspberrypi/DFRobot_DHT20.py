@@ -26,7 +26,7 @@ class DFRobot_DHT20(object):
 
   '''
     @brief init function
-    @return Return 0 if initialization succeeds, otherwise return non-zero and error code.
+    @return Return True if initialization succeeds, otherwise return non-zero and error code.
    '''
   def begin(self ):
 
@@ -34,7 +34,7 @@ class DFRobot_DHT20(object):
     time.sleep(0.5)
     data = self.read_reg(0x71,1)
     
-    if (data[0] | 0x08) == 0:
+    if (data[0] & 0x18) != 0x18:
       return False
     else:
       return True
