@@ -10,7 +10,6 @@
   *@get from https://www.dfrobot.com
   *@https://github.com/DFRobot/DFRobot_DHT20
 """
-import serial
 import time
 import smbus
                 
@@ -40,29 +39,20 @@ class DFRobot_DHT20(object):
       return True
 
   '''
-    @brief Get ambient temperature, unit: °C
-    @return ambient temperature,the measurement range is -40°C ~ 80°C
+    @brief Get temperature in °C and relative humidity in %RH. 
+    @return Dictionary {'temperature': Float, 'humidity': Float}
+        temperature: ambient temperature,the measurement range is -40°C ~ 80°C
+        humidity: relative humidity, the measurement range is (1-100%)
   '''
-  def get_temperature(self):
+  def measure(self):
      self.write_reg(0xac,[0x33,0x00])
      time.sleep(0.1)
      data = self.read_reg(0x71,7)
      rawData = ((data[3]&0xf) <<16) + (data[4]<<8)+data[5]
-     #print(rawData)
      temperature = float(rawData)/5242 -50
-     return temperature
-     
-  '''
-    @brief Get relative humidity, unit: %RH. 
-    @return relative humidity, the measurement range is (1-100%)
-  '''
-  def get_humidity(self):
-     self.write_reg(0xac,[0x33,0x00])
-     time.sleep(0.1)
-     data = self.read_reg(0x71,7)
      rawData = ((data[3]&0xf0) >>4) + (data[1]<<12)+(data[2]<<4)
      humidity = float(rawData)/0x100000
-     return humidity*100
+     return {'temperature': temperature, 'humidity': humidity*100}
      
   
   def write_reg(self, reg,data):
